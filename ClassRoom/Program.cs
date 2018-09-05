@@ -12,11 +12,22 @@ namespace ClassRoom
         static void Main(string[] args)
         {
             KlasseRum klasseRum = new KlasseRum();
+            klasseRum.Klasseliste = new List<Studerende>();
+
             klasseRum.KlasseNavn = "3B";
-            klasseRum.SemesterStart = new DateTime(4,9,2018);
+            klasseRum.SemesterStart = new DateTime(2018, 4, 24);
             klasseRum.Klasseliste.Add(new Studerende("Arlid", 4, 24));
-            klasseRum.Klasseliste.Add(new Studerende("Benja", 06, 18));
+            klasseRum.Klasseliste.Add(new Studerende("Benja", 6, 18));
             
+            Console.WriteLine(klasseRum.KlasseNavn);
+            Console.WriteLine(klasseRum.SemesterStart);
+
+
+            foreach (Studerende elev in klasseRum.Klasseliste)
+            {
+                Console.WriteLine(elev.Navn + elev.Fødselsdag + elev.Fødselsmåned);
+            }
+            Console.ReadKey();
         }
     }
 }

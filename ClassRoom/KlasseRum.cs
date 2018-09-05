@@ -15,5 +15,10 @@ namespace ClassRoom
         public KlasseRum()
         {
         }
+
+        public override string ToString()
+        {
+            return KlasseNavn + Klasseliste + SemesterStart;
+        }
     }
 }
