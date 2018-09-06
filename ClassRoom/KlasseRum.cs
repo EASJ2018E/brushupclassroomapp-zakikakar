@@ -20,5 +20,10 @@ namespace ClassRoom
         {
             return KlasseNavn + Klasseliste + SemesterStart;
         }
+
+        public void Antalføds()
+        {
+         //   var Vinter = 
+        }
     }
 }
