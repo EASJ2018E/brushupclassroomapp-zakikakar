@@ -23,11 +23,15 @@ namespace ClassRoom
 
             foreach (Studerende elev in klasseRum.Klasseliste)
             {
-                Console.WriteLine(elev.Navn + elev.Fødselsdag + elev.Fødselsmåned + elev.Årstider());
+                Console.WriteLine(elev.Navn + " " + elev.Fødselsdag + " " + elev.Fødselsmåned +"  " + elev.Årstider());
                 Console.WriteLine(klasseRum.KlasseNavn);
                 Console.WriteLine(klasseRum.SemesterStart);
 
             }
+
+            Console.WriteLine("\n\rAntalføds:");
+            klasseRum.Antalføds();
+
             Console.ReadKey();
         }
     }
